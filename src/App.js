@@ -6,8 +6,8 @@ import Main from './views/Main';
 function App() {
     return (
         <StyledEngineProvider injectFirst>
+            <CssBaseline />
             <Main />
-            <CssBaseline />;
         </StyledEngineProvider>
     );
 }
