@@ -11,7 +11,13 @@ const ProfileImage = ({ name }) => {
                 src={profile__img}
                 sx={{ width: 56, height: 56 }}
             />
-            <Typography>{name}</Typography>
+            <Typography
+                sx={{
+                    fontFamily: `'Roboto Condensed', sans-serif`,
+                    fontWeight: '700',
+                }}>
+                {name}
+            </Typography>
         </Box>
     );
 };
