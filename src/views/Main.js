@@ -4,7 +4,7 @@ import Header from '../components/Header';
 
 const Main = () => {
     return (
-        <Container>
+        <Container maxWidth='lg' sx={{ margin: '4rem auto' }}>
             <Header />
         </Container>
     );
