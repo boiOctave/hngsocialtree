@@ -6,7 +6,7 @@ const ShareButton = () => {
     return (
         <IconButton
             aria-label='delete'
-            sx={{ position: 'relative', bottom: '3rem' }}>
+            sx={{ position: 'absolute', bottom: '5rem', right: '10rem' }}>
             <img src={share} alt='share' className='share__button' />{' '}
         </IconButton>
     );
