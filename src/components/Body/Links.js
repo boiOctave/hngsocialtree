@@ -11,7 +11,16 @@ const Links = ({ name }) => {
                 backgroundColor: '#EAECF0',
                 color: '#101828',
                 fontWeight: '700',
+                fontSize: '13x',
                 fontFamily: 'Roboto Condensed',
+
+                '&:hover': {
+                    backgroundColor: '#D0D5DD',
+                },
+                '&:focus': {
+                    border: '2px solid #98A2B3',
+                    backgroundColor: '#EAECF0',
+                },
             }}>
             {name}
         </Button>
