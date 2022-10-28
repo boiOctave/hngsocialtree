@@ -1,9 +1,12 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const Links = ({ name, id }) => {
+const Links = ({ name, id, link }) => {
     return (
         <Button
+            component='a'
+            target='_blank'
+            href={link}
             id={id}
             variant='contained'
             disableElevation
