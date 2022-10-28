@@ -42,9 +42,6 @@
     background-color: rgba(52, 64, 84, 0.6);
 }
 
-.profile__img-container:focus::after {
-}
-
 .share__button {
     width: 35px;
     height: 35px;

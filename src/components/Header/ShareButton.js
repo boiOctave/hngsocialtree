@@ -6,7 +6,16 @@ const ShareButton = () => {
     return (
         <IconButton
             aria-label='delete'
-            sx={{ position: 'absolute', bottom: '5rem', right: '10rem' }}>
+            sx={{
+                position: 'absolute',
+                bottom: '5rem',
+                width: '45px',
+                height: '45px',
+                right: '10rem',
+                '&:focus': {
+                    border: '3px solid #EBE9FE',
+                },
+            }}>
             <img src={share} alt='share' className='share__button' />{' '}
         </IconButton>
     );
