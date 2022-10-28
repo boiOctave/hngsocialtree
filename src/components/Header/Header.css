@@ -1,6 +1,7 @@
 .profile__img {
     width: 70px;
     height: 70px;
+    cursor: pointer;
 }
 
 .share__button {
