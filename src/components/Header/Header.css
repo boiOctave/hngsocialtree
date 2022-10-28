@@ -2,8 +2,8 @@
     position: relative;
 }
 .profile__img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
 }
 /* .profile__img-container::after {
@@ -34,8 +34,8 @@
     top: 0;
     left: 0;
     content: '';
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     cursor: pointer;
     background-color: rgba(52, 64, 84, 0.6);
