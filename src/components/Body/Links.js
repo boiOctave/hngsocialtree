@@ -8,6 +8,7 @@ const Links = ({ name }) => {
             disableElevation
             sx={{
                 width: '80%',
+                height: '50px',
                 backgroundColor: '#EAECF0',
                 color: '#101828',
                 fontWeight: '700',
