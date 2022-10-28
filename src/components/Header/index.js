@@ -9,6 +9,7 @@ const Header = () => {
             sx={{
                 display: 'flex',
                 justifyContent: 'center',
+                position: 'relative',
                 alignItems: 'center',
             }}>
             <ProfileImage name={'Annette Black'} />
