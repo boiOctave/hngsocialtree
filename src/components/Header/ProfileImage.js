@@ -20,12 +20,14 @@ const ProfileImage = ({ name }) => {
                 src={profile__img}
                 sx={{ width: 56, height: 56 }}
             /> */}
-            <img
-                src={profile__img}
-                alt='profile avatar'
-                id='profile__img'
-                className='profile__img'
-            />
+            <div className='profile__img-container'>
+                <img
+                    src={profile__img}
+                    alt='profile avatar'
+                    id='profile__img'
+                    className='profile__img'
+                />
+            </div>
             <Typography
                 sx={{
                     fontFamily: `'Roboto Condensed', sans-serif`,
