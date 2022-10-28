@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import React from 'react';
 import profile__img from '../../assets/images/profile__img.png';
 import camera__icon from '../../assets/images/camera-01.svg';
@@ -22,12 +22,27 @@ const ProfileImage = ({ name }) => {
                 sx={{ width: 56, height: 56 }}
             /> */}
             <div className='profile__img-container'>
-                <img
-                    src={profile__img}
-                    alt='profile avatar'
-                    id='profile__img'
-                    className='profile__img'
-                />
+                <Button
+                    variant='outlined'
+                    sx={{
+                        width: '90px',
+                        height: '90px',
+                        borderRadius: '50%',
+                        border: 'none',
+                        '&:hover': {
+                            border: 'none',
+                        },
+                        '&:focus': {
+                            border: '3px solid #EBE9FE',
+                        },
+                    }}>
+                    <img
+                        src={profile__img}
+                        alt='profile avatar'
+                        id='profile__img'
+                        className='profile__img'
+                    />
+                </Button>
                 <img
                     src={camera__icon}
                     alt='profile avatar'

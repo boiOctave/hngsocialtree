@@ -32,8 +32,8 @@
 }
 .profile__img-container:hover::after {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 5px;
     content: '';
     width: 80px;
     height: 80px;
