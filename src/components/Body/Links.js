@@ -1,9 +1,10 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const Links = ({ name }) => {
+const Links = ({ name, id }) => {
     return (
         <Button
+            id={id}
             variant='contained'
             disableElevation
             sx={{

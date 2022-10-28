@@ -13,7 +13,7 @@ const index = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
             }}>
-            <Links name={'Twitter Link'} />
+            <Links name={'Twitter Link'} id={'twitter'} />
             <Links name={'Zuri Team'} />
             <Links name={'Zuri Books'} />
             <Links name={'Phython Books'} />
