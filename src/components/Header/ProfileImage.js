@@ -12,7 +12,7 @@ const ProfileImage = ({ name }) => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexDirection: 'column',
-                gap: '1rem',
+                gap: '0.5rem',
                 flex: '0.5',
             }}>
             {/* <Avatar
