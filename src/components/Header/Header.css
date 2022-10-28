@@ -19,7 +19,7 @@
 } */
 .camera__icon {
     position: absolute;
-    bottom: 10px;
+    bottom: 17px;
     cursor: pointer;
     left: 50%;
     z-index: 99;
