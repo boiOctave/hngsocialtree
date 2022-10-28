@@ -5,7 +5,12 @@ import ShareButton from './ShareButton';
 
 const Header = () => {
     return (
-        <Box>
+        <Box
+            sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}>
             <ProfileImage name={'Annette Black'} />
             <ShareButton />
         </Box>
