@@ -1,7 +1,44 @@
+.profile__img-container {
+    position: relative;
+}
 .profile__img {
     width: 70px;
     height: 70px;
     cursor: pointer;
+}
+/* .profile__img-container::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+.camera__icon {
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+    left: 50%;
+    z-index: 99;
+    transform: translateX(-50%);
+    display: none;
+}
+.profile__img-container:hover .camera__icon {
+    display: block;
+}
+.profile__img-container:hover::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(52, 64, 84, 0.6);
 }
 
 .share__button {
