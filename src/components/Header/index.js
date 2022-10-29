@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Tooltip } from '@mui/material';
 import React from 'react';
 import ProfileImage from './ProfileImage';
 import ShareButton from './ShareButton';
@@ -13,6 +13,7 @@ const Header = () => {
                 alignItems: 'center',
             }}>
             <ProfileImage name={'Annette Black'} />
+
             <ShareButton />
         </Box>
     );
