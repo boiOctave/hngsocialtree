@@ -24,7 +24,7 @@ const MoreButton = () => {
                     bottom: '2rem',
                     width: '45px',
                     height: '45px',
-                    left: '5rem',
+                    left: '2rem',
 
                     '&:focus': {
                         border: '3px solid #EBE9FE',
@@ -43,8 +43,8 @@ const MoreButton = () => {
                     borderRadius: '1rem',
                     cursor: 'pointer',
                     position: 'absolute',
-                    left: '-35px',
-                    bottom: '-35px',
+                    left: '-89px',
+                    bottom: '79px',
                     visibility: { visibility },
                 }}>
                 <img src={share} alt='share' className='mobile__share-button' />
