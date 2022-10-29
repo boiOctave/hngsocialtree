@@ -1,3 +1,18 @@
 .slack__icon {
     display: none;
 }
+
+@media (max-width: 600px) {
+    .footer__web {
+        display: none;
+    }
+}
+@media (min-width: 600px) {
+    .footer__web2 {
+        display: none;
+    }
+}
+
+.footer__web2 img {
+    width: 400px;
+}
