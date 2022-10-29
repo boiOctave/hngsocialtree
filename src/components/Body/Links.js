@@ -16,6 +16,7 @@ const Links = ({ name, id, link, title }) => {
             sx={{
                 width: '80%',
                 height: '43px',
+
                 backgroundColor: '#EAECF0',
                 color: '#101828',
                 fontWeight: '700',

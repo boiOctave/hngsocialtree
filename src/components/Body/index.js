@@ -7,10 +7,10 @@ const index = () => {
     return (
         <Box
             sx={{
-                marginTop: '3rem',
+                marginTop: '6rem',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '2rem',
+                gap: '1.7rem',
                 justifyContent: 'center',
                 alignItems: 'center',
                 height: '50%',
