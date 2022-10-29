@@ -54,7 +54,8 @@
     }
 }
 @media screen and (min-width: 600px) {
-    .more__button-container {
+    .more__button-container,
+    .share {
         display: none;
     }
 }
@@ -83,4 +84,14 @@
 
 .tip:hover .tooltip {
     visibility: visible;
+}
+
+.span {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(124, 121, 121);
+    white-space: nowrap;
+}
+
+.share__container {
+    position: relative;
 }
