@@ -17,7 +17,7 @@ const Links = ({ name, id, link, title }) => {
                 backgroundColor: '#EAECF0',
                 color: '#101828',
                 fontWeight: '700',
-                fontSize: '13x',
+                fontSize: '16x',
                 fontFamily: 'Roboto Condensed',
 
                 '&:hover': {

@@ -1,6 +1,7 @@
 import { Box } from '@mui/system';
 import React from 'react';
 import Links from './Links';
+import './Body.css';
 
 const index = () => {
     return (
