@@ -1,5 +1,6 @@
 import { Box, Tooltip } from '@mui/material';
 import React from 'react';
+import MoreButton from './MoreButton';
 import ProfileImage from './ProfileImage';
 import ShareButton from './ShareButton';
 
@@ -15,6 +16,7 @@ const Header = () => {
             <ProfileImage name={'Annette Black'} />
 
             <ShareButton />
+            <MoreButton />
         </Box>
     );
 };

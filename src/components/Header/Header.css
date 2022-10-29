@@ -42,13 +42,19 @@
     background-color: rgba(52, 64, 84, 0.6);
 }
 
-.share__button {
+.share__button,
+.more__button {
     width: 35px;
     height: 35px;
 }
 
 @media screen and (max-width: 600px) {
     .share__button-container {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) {
+    .more__button-container {
         display: none;
     }
 }
