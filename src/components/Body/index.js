@@ -10,9 +10,10 @@ const index = () => {
                 marginTop: '3rem',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '1rem',
+                gap: '2rem',
                 justifyContent: 'center',
                 alignItems: 'center',
+                height: '50%',
             }}>
             <Links
                 name={'Twitter Link'}

@@ -1,3 +1,9 @@
 .css-1mrojd1-MuiButtonBase-root-MuiButton-root {
     text-transform: none;
 }
+
+@media screen and (max-width: 600px) {
+    .buttons {
+        width: 100%;
+    }
+}

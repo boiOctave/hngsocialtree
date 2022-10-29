@@ -1,9 +1,11 @@
 import { Button } from '@mui/material';
 import React from 'react';
+import './Body.css';
 
 const Links = ({ name, id, link, title }) => {
     return (
         <Button
+            className='buttons'
             component='a'
             target='_blank'
             href={link}
