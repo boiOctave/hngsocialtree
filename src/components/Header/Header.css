@@ -58,3 +58,29 @@
         display: none;
     }
 }
+.tooltip {
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    right: 220px;
+    bottom: 86px;
+    border-radius: 7px;
+    background-color: #101828;
+    color: #fff;
+    padding: 0.7rem;
+    visibility: hidden;
+}
+.tooltip::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 14px;
+    width: 19px;
+    height: 19px;
+    z-index: -8;
+    background-color: #101828;
+    transform: rotate(45deg);
+}
+
+.tip:hover .tooltip {
+    visibility: visible;
+}

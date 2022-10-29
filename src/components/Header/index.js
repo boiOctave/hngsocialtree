@@ -14,8 +14,11 @@ const Header = () => {
                 alignItems: 'center',
             }}>
             <ProfileImage name={'Annette Black'} />
+            <div className='tip'>
+                {' '}
+                <ShareButton />
+            </div>
 
-            <ShareButton />
             <MoreButton />
         </Box>
     );
