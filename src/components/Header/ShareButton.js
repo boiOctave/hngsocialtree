@@ -5,6 +5,7 @@ import './Header.css';
 const ShareButton = () => {
     return (
         <IconButton
+            className='share__button-container'
             aria-label='delete'
             sx={{
                 position: 'absolute',
