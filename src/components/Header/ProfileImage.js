@@ -14,6 +14,7 @@ const ProfileImage = ({ name }) => {
                 flexDirection: 'column',
                 gap: '0.5rem',
                 flex: '0.5',
+                marginBottom: '2rem',
             }}>
             {/* <Avatar
                 alt='Profile Image'
