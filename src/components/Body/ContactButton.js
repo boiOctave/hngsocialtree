@@ -3,12 +3,11 @@ import React from 'react';
 import share from '../../assets/images/Type=Share, State=Default.svg';
 import './Body.css';
 
-const Links = ({ name, id, link, title }) => {
+const ContactButton = ({ name, id, link, title }) => {
     return (
         <Button
             className='buttons'
             component='a'
-            target='_blank'
             href={link}
             id={id}
             title={title}
@@ -33,9 +32,9 @@ const Links = ({ name, id, link, title }) => {
                 },
             }}>
             <Typography className='links__text'>{name}</Typography>
-            <img src={share} className='share__hover' alt={name}/>
+            <img src={share} className='share__hover' alt={name} />
         </Button>
     );
 };
 
-export default Links;
+export default ContactButton;

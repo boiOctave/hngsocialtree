@@ -2,6 +2,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import Links from './Links';
 import './Body.css';
+import ContactButton from './ContactButton';
 
 const index = () => {
     return (
@@ -58,6 +59,11 @@ const index = () => {
                 title={
                     'You can get free design books from here to help start you journey into design'
                 }
+            />
+            <ContactButton
+                name={'Contact Me'}
+                id={'contact'}
+                link={'/contact'}
             />
         </Box>
     );
