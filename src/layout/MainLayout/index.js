@@ -1,5 +1,5 @@
 import { Box } from '@mui/system';
-import Footer from 'layout/Footer';
+import Footer from 'components/Footer/index';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
