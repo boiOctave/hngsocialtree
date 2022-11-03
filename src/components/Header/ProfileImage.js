@@ -1,6 +1,6 @@
 import { Box, Typography, Button } from '@mui/material';
 import React from 'react';
-import profile__img from '../../assets/images/profile__img.png';
+import profile__img from '../../assets/images/191524445_485615882776435_2153808452692865499_n.jpg';
 import camera__icon from '../../assets/images/camera-01.svg';
 import './Header.css';
 

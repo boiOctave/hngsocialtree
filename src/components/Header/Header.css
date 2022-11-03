@@ -4,6 +4,7 @@
 .profile__img {
     width: 80px;
     height: 80px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -54,8 +55,7 @@
     }
 }
 @media screen and (min-width: 600px) {
-    .more__button-container,
-    .share {
+    .more__button-container {
         display: none;
     }
 }

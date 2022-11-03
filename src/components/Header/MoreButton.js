@@ -43,7 +43,7 @@ const MoreButton = () => {
                     borderRadius: '1rem',
                     cursor: 'pointer',
                     position: 'absolute',
-                    left: '-89px',
+                    left: '-64px',
                     bottom: '79px',
                     visibility: { visibility },
                 }}>

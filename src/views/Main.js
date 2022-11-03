@@ -6,7 +6,7 @@ import Body from '../components/Body/index';
 
 const Main = () => {
     return (
-        <Container maxWidth='xl' sx={{ marginTop: '7rem', height: '100vh' }}>
+        <Container maxWidth='xl' sx={{ marginTop: '5rem', height: '100vh' }}>
             <Header />
             <Body />
             <Footer />

@@ -6,5 +6,28 @@
 @media screen and (max-width: 600px) {
     .buttons {
         width: 100%;
+        display: flex;
     }
+    .share__hover {
+        width: 30px;
+        height: 30px;
+        display: none;
+    }
+    .buttons:hover .share__hover {
+        display: block;
+    }
+}
+@media screen and (min-width: 600px) {
+    .share__hover {
+        display: none;
+    }
+}
+
+.links__text {
+    flex: 1;
+    color: #101828;
+    font-weight: 700;
+    font-size: 16x;
+    font-family: 'Roboto Condensed';
+    text-align: center;
 }

@@ -13,7 +13,7 @@ const Header = () => {
                 position: 'relative',
                 alignItems: 'center',
             }}>
-            <ProfileImage name={'Annette Black'} />
+            <ProfileImage name={'Ayodeji Joel'} />
             <div className='tip'>
                 {' '}
                 <ShareButton />

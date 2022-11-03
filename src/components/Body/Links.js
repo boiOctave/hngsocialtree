@@ -1,5 +1,6 @@
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import React from 'react';
+import share from '../../assets/images/Type=Share, State=Default.svg';
 import './Body.css';
 
 const Links = ({ name, id, link, title }) => {
@@ -31,7 +32,8 @@ const Links = ({ name, id, link, title }) => {
                     backgroundColor: '#EAECF0',
                 },
             }}>
-            {name}
+            <Typography className='links__text'>{name}</Typography>
+            <img src={share} className='share__hover' />
         </Button>
     );
 };
