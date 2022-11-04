@@ -3,14 +3,10 @@ import Footer from 'components/Footer/index';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
+import './Main.css';
 const MainLayout = () => {
     return (
-        <Box
-            sx={{
-                width: '100%',
-                minHeight: '100vh',
-                backgroundColor: '#fff',
-            }}>
+        <Box className='main'>
             {' '}
             <Outlet />
             <Footer />

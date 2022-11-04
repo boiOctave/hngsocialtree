@@ -263,16 +263,15 @@ const Form = () => {
                         onClose={handleClose}
                         sx={{ width: '200px' }}>
                         <Alert onClose={handleClose} severity='success'>
-                            Thank You For reaching out{' '}
+                            Thank You{' '}
                             {
                                 <span>
                                     {values.firstName} {values.lastName}
                                 </span>
                             }{' '}
-                            Your Message Has been sent to Octave Succssfully
+                            Message sent to Succssfully
                         </Alert>
                     </Snackbar>
-                    ;
                 </form>
             )}
         </Formik>

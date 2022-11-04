@@ -4,6 +4,9 @@
 textarea {
     resize: none;
 }
+form {
+    position: relative;
+}
 
 input,
 textarea {
@@ -12,10 +15,11 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .name {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -24,9 +28,13 @@ textarea::placeholder {
 .email {
     position: relative;
 }
+.message {
+    position: relative;
+}
 .firstname,
 .lastname,
 .email,
+.submit,
 .message {
     display: flex;
     flex-direction: column;
@@ -40,9 +48,13 @@ textarea::placeholder {
     font-size: 1rem;
     font-weight: 500;
 }
+.firstname,
+.lastname {
+    width: 48%;
+}
 .name input {
     padding: 0.8rem;
-    width: 17rem;
+
     border-radius: 5px;
     border: 1px rgb(218, 217, 217) solid;
 }
@@ -51,10 +63,11 @@ textarea::placeholder {
     border-radius: 5px;
     border: 1px rgb(218, 217, 217) solid;
     margin-bottom: 1rem;
+    width: 100%;
 }
 .message textarea {
     padding: 1rem 0.5rem;
-    height: 10rem;
+    height: 7rem;
     border-radius: 5px;
     border: 1px rgb(218, 217, 217) solid;
     margin-bottom: 1rem;
@@ -93,7 +106,7 @@ textarea:focus {
 }
 .yupError__message {
     position: absolute;
-    bottom: 7.5rem;
+    bottom: -10px;
     color: red;
 }
 
@@ -102,21 +115,43 @@ textarea:focus {
 }
 .toAST {
     font-family: 'Roboto Condensed', sans-serif;
-    position: absolute;
-    top: -10%;
-    left: 80%;
+    position: relative;
+    bottom: 0rem;
+    left: 20%;
 }
 .toAST span {
     font-weight: 600;
 }
+.contact__container {
+    border: 2px solid rgba(135, 135, 135, 0.197);
+    width: 55%;
+    border-radius: 5px;
+    padding: 2rem;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
+    .css-1iiu75p-MuiTypography-root {
+        font-size: 2rem;
+    }
+    .css-1vzl55l-MuiTypography-root {
+        font-size: 1.2rem;
+    }
     .name {
         flex-direction: column;
         align-items: flex-start;
     }
-    .name input {
-        width: 34.4rem;
+    .firstname,
+    .lastname {
+        width: 100%;
+    }
+    .firstname .yupError {
+        bottom: 77px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .contact__container {
+        width: 66%;
     }
     .css-1iiu75p-MuiTypography-root {
         font-size: 2rem;
@@ -125,48 +160,31 @@ textarea:focus {
         font-size: 1.2rem;
     }
 }
-@media screen and (max-width: 570px) {
-    .css-3c4nx4 {
-        width: 400px;
-    }
-    .name input {
-        width: 24.7rem;
+@media screen and (max-width: 600px) {
+    .contact__container {
+        width: 90%;
     }
     .css-1vzl55l-MuiTypography-root {
         font-size: 1rem;
     }
 }
 @media screen and (max-width: 415px) {
-    .css-3c4nx4 {
-        width: 380px;
-    }
-    .name input {
-        width: 23.7rem;
-    }
     .css-1vzl55l-MuiTypography-root {
         font-size: 0.9rem;
     }
 }
 @media screen and (max-width: 395px) {
-    .css-3c4nx4 {
-        width: 340px;
-    }
-    .name input {
-        width: 21.4rem;
-    }
     .css-1vzl55l-MuiTypography-root {
         font-size: 0.9rem;
     }
 }
 @media screen and (max-width: 370px) {
-    .css-3c4nx4 {
-        width: 300px;
-    }
-    .name input {
-        width: 19.4rem;
-    }
     .css-1vzl55l-MuiTypography-root {
         font-size: 0.8rem;
         word-wrap: break-word;
     }
 }
+
+/* .contact__container {
+    border: 1px solid red;
+} */
