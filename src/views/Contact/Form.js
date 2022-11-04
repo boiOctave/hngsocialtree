@@ -118,7 +118,9 @@ const Form = () => {
                         </div>
                         <div
                             className={`lastname ${
-                                errors.lastName ? 'error' : ''
+                                errors.lastName && touched.firstName
+                                    ? 'error'
+                                    : ''
                             }`}>
                             <span> Last Name</span>
                             <input
@@ -136,7 +138,10 @@ const Form = () => {
                             ) : null}
                         </div>
                     </div>
-                    <div className={`email ${errors.email ? 'error' : ''}`}>
+                    <div
+                        className={`email ${
+                            errors.email && touched.firstName ? 'error' : ''
+                        }`}>
                         <span> Email</span>
                         <input
                             placeholder='Yourname@email.com'
@@ -150,7 +155,10 @@ const Form = () => {
                             <div className='yupError'>{errors.email}</div>
                         ) : null}
                     </div>
-                    <div className={`message ${errors.message ? 'error' : ''}`}>
+                    <div
+                        className={`message ${
+                            errors.message && touched.firstName ? 'error' : ''
+                        }`}>
                         <span> Message</span>
                         <textarea
                             placeholder="Send me a message and i'll reply you as soon as possible..."
@@ -167,7 +175,9 @@ const Form = () => {
                     </div>
                     <div
                         className={`checkbox ${
-                            errorClass.Permission ? 'error' : ''
+                            errorClass.Permission && touched.firstName
+                                ? 'error'
+                                : ''
                         }`}>
                         <div className='agree'>
                             <Checkbox onChange={handlePermission} />
