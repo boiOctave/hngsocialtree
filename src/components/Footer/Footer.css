@@ -1,3 +1,7 @@
+.footer__web2 img,
+.footer__web img {
+    width: 100%;
+}
 .slack__icon {
     display: none;
 }
@@ -11,8 +15,4 @@
     .footer__web2 {
         display: none;
     }
-}
-
-.footer__web2 img {
-    width: 400px;
 }
