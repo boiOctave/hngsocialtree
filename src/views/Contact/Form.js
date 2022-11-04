@@ -1,4 +1,10 @@
-import { Alert, Button, Checkbox, Snackbar } from '@mui/material';
+import {
+    Alert,
+    Button,
+    Checkbox,
+    CircularProgress,
+    Snackbar,
+} from '@mui/material';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
@@ -84,7 +90,7 @@ const Form = () => {
                         setInterval(() => {
                             setIsLoading(false);
                             setSuccessOpen(true);
-                        }, 3000);
+                        }, 4000);
                         setIsLoading(true);
                         clearInterval();
                     }
@@ -199,7 +205,14 @@ const Form = () => {
                                 marginTop: '1rem',
                                 textTransform: 'capitalize',
                             }}>
-                            Send Message
+                            Send Message{'    '}
+                            {isLoading && (
+                                <CircularProgress
+                                    color='inherit'
+                                    size={30}
+                                    sx={{ marginLeft: '10px' }}
+                                />
+                            )}
                         </Button>
                     </div>
                     <Snackbar
