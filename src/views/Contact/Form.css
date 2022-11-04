@@ -119,6 +119,13 @@ textarea:focus {
     bottom: 0rem;
     left: 20%;
 }
+@media screen and (min-width: 900px) {
+    .toAST {
+        position: absolute;
+        bottom: 30rem;
+        left: 110%;
+    }
+}
 .toAST span {
     font-weight: 600;
 }

@@ -9,7 +9,7 @@ const Contact = () => {
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                marginTop: '6rem',
+                marginTop: '3rem',
                 justifyContent: 'center',
                 alignItems: 'center',
             }}>
