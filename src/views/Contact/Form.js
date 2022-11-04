@@ -87,12 +87,11 @@ const Form = () => {
 
                         setOpen(true);
                     } else {
-                        setInterval(() => {
+                        setTimeout(() => {
                             setIsLoading(false);
                             setSuccessOpen(true);
                         }, 4000);
                         setIsLoading(true);
-                        clearInterval();
                     }
                 } catch (err) {
                     console.error(err);
