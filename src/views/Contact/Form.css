@@ -130,6 +130,7 @@ textarea:focus {
 }
 .agree {
     display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 850px) {
