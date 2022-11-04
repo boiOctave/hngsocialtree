@@ -8,6 +8,7 @@ import './Form.css';
 const Form = () => {
     const [open, setOpen] = useState(false);
     const [successOpen, setSuccessOpen] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const [value, setValue] = useState({
         firstName: '',
         lastName: '',
@@ -73,17 +74,19 @@ const Form = () => {
                     .max(255)
                     .required('Last Name is required'),
             })}
-            onSubmit={async (
-                values,
-                { setErrors, setStatus, setSubmitting }
-            ) => {
+            onSubmit={async (values) => {
                 try {
                     if (!value.Permission) {
                         setErrorClass({ ...errorClass, Permission: true });
 
                         setOpen(true);
                     } else {
-                        setSuccessOpen(true);
+                        setInterval(() => {
+                            setIsLoading(false);
+                            setSuccessOpen(true);
+                        }, 3000);
+                        setIsLoading(true);
+                        clearInterval();
                     }
                 } catch (err) {
                     console.error(err);
@@ -181,6 +184,7 @@ const Form = () => {
                             variant='contained'
                             type='submit'
                             id='btn__submit'
+                            disabled={isLoading}
                             sx={{
                                 marginTop: '1rem',
                                 textTransform: 'capitalize',
