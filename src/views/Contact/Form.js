@@ -218,12 +218,13 @@ const Form = () => {
                         onClose={handleClose}
                         sx={{ width: '200px' }}>
                         <Alert onClose={handleClose} severity='success'>
-                            Thank You{' '}
+                            Thank You <br />
                             {
                                 <span>
                                     {values.firstName} {values.lastName}
                                 </span>
                             }{' '}
+                            <br />
                             Message sent to Succssfully
                         </Alert>
                     </Snackbar>
