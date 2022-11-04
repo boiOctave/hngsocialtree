@@ -15,6 +15,7 @@ const Links = ({ name, id, link, title }) => {
             variant='contained'
             disableElevation
             sx={{
+                textTransform: 'capitalize',
                 width: '80%',
                 height: '43px',
 
@@ -33,7 +34,7 @@ const Links = ({ name, id, link, title }) => {
                 },
             }}>
             <Typography className='links__text'>{name}</Typography>
-            <img src={share} className='share__hover' alt={name}/>
+            <img src={share} className='share__hover' alt={name} />
         </Button>
     );
 };
