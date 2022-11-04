@@ -1,13 +1,4 @@
-import {
-    Alert,
-    Badge,
-    Button,
-    Checkbox,
-    FormControl,
-    InputLabel,
-    OutlinedInput,
-    Snackbar,
-} from '@mui/material';
+import { Alert, Button, Checkbox, Snackbar } from '@mui/material';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
@@ -24,7 +15,7 @@ const Form = () => {
         message: '',
         Permission: false,
     });
-    const [errors, setErrors] = useState({});
+
     const [errorClass, setErrorClass] = useState({
         firstName: false,
         lastName: false,
@@ -32,63 +23,13 @@ const Form = () => {
         message: false,
         Permission: false,
     });
-    const handleFirstName = (e) => {
-        setValue({ ...value, firstName: e.target.value });
-    };
-    const handleLastName = (e) => {
-        setValue({ ...value, lastName: e.target.value });
-    };
-    const handleEmail = (e) => {
-        setValue({ ...value, email: e.target.value });
-    };
-    const handleMessage = (e) => {
-        setValue({ ...value, message: e.target.value });
-    };
+
     const handlePermission = () => {
         if (value.Permission) {
             setValue({ ...value, Permission: false });
         } else {
             setValue({ ...value, Permission: true });
         }
-    };
-    const validate = (values) => {
-        let errors = {};
-        if (!values.email) {
-            errors.email = 'Please Fill in Your Email adress';
-            setErrorClass({
-                ...errorClass,
-                email: true,
-            });
-        } else if (!values.firstName) {
-            errors.firstName = 'Please Fill in Your First Name';
-            setErrorClass({ ...errorClass, firstName: true });
-        } else if (!values.lastName) {
-            errors.lastName = 'Please Fill in Your last Name';
-            setErrorClass({
-                ...errorClass,
-                lastName: true,
-            });
-        } else if (!values.message) {
-            errors.message = 'Please Fill in Your Message';
-            setErrorClass({
-                ...errorClass,
-                message: true,
-            });
-        } else if (values.Permission === false) {
-            errors.Permission = 'Please Fill checkbox';
-            setErrorClass({
-                ...errorClass,
-                Permission: true,
-            });
-        } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(values.email)) {
-            errors.email = 'Invalid Email';
-            setErrorClass({
-                ...errorClass,
-                email: true,
-            });
-        }
-
-        return errors;
     };
 
     //     const handleSubmit = (e) => {
