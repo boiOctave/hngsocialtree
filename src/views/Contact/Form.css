@@ -125,3 +125,48 @@ textarea:focus {
         font-size: 1.2rem;
     }
 }
+@media screen and (max-width: 570px) {
+    .css-3c4nx4 {
+        width: 400px;
+    }
+    .name input {
+        width: 24.7rem;
+    }
+    .css-1vzl55l-MuiTypography-root {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 415px) {
+    .css-3c4nx4 {
+        width: 380px;
+    }
+    .name input {
+        width: 23.7rem;
+    }
+    .css-1vzl55l-MuiTypography-root {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 395px) {
+    .css-3c4nx4 {
+        width: 340px;
+    }
+    .name input {
+        width: 21.4rem;
+    }
+    .css-1vzl55l-MuiTypography-root {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 370px) {
+    .css-3c4nx4 {
+        width: 300px;
+    }
+    .name input {
+        width: 19.4rem;
+    }
+    .css-1vzl55l-MuiTypography-root {
+        font-size: 0.8rem;
+        word-wrap: break-word;
+    }
+}

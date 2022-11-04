@@ -10,7 +10,7 @@ const Contact = () => {
                 display: 'flex',
                 justifyContent: 'center',
             }}>
-            <Box>
+            <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 <Typography
                     variant='h5'
                     fontWeight={700}
@@ -19,15 +19,11 @@ const Contact = () => {
                     Contact Me
                 </Typography>
                 <Typography
-                    variant='p'
+                    variant='h6'
                     fontFamily={`'Roboto Condensed',sans-serif`}
                     fontSize='1rem'>
                     Hi there,Contact me to ask anything you have in mind.{' '}
                 </Typography>
-                <Box sx={{ marginTop: '1rem', width: '550px' }}>
-                    {' '}
-                    <Form />
-                </Box>
             </Box>
         </Box>
     );
