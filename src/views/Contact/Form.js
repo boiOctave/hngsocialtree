@@ -80,7 +80,7 @@ const Form = () => {
                     .max(255)
                     .required('Last Name is required'),
             })}
-            onSubmit={async (values) => {
+            onSubmit={async (values, { resetForm }) => {
                 try {
                     if (!value.Permission) {
                         setErrorClass({ ...errorClass, Permission: true });
@@ -89,7 +89,13 @@ const Form = () => {
                     } else {
                         setTimeout(() => {
                             setIsLoading(false);
+                            setValue({
+                                ...value,
+                                firstName: values.firstName,
+                                lastName: values.lastName,
+                            });
                             setSuccessOpen(true);
+                            resetForm({ values: '' });
                         }, 4000);
                         setIsLoading(true);
                     }
@@ -233,11 +239,11 @@ const Form = () => {
                             Thank You <br />
                             {
                                 <span>
-                                    {values.firstName} {values.lastName}
+                                    {value.firstName} {value.lastName}
                                 </span>
                             }{' '}
                             <br />
-                            Message sent to Succssfully
+                            Message sent Succssfully
                         </Alert>
                     </Snackbar>
                 </form>
