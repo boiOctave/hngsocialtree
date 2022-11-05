@@ -14,6 +14,7 @@ const ContactButton = ({ name, id, link, title }) => {
             variant='contained'
             disableElevation
             sx={{
+                textTransform: 'capitalize',
                 width: '80%',
                 height: '43px',
 
