@@ -42,10 +42,10 @@ textarea::placeholder {
     margin-bottom: 15px;
 }
 
-.firstname span,
-.lastname span,
-.email span,
-.message span {
+.firstname label,
+.lastname label,
+.email label,
+.message label {
     font-size: 14px;
     font-weight: 500;
     color: #344054;
@@ -107,16 +107,21 @@ textarea:focus {
 .yupError {
     position: absolute;
     bottom: -13px;
+    font-size: 13px;
     color: red;
 }
 .yupError__message {
     position: absolute;
     bottom: -10px;
     color: red;
+    font-size: 13px;
 }
 
 .error .css-i4bv87-MuiSvgIcon-root {
     color: red;
+}
+.error .test:focus {
+    box-shadow: 0px 0px 0px 4px #ffd1d9;
 }
 
 .toAST {
@@ -176,11 +181,11 @@ textarea:focus {
 }
 
 .test::before {
-    content: '✔';
+    content: '✓';
     color: #1570ef;
     position: absolute;
     bottom: -4px;
-    left: 1.5px;
+    left: 2px;
     transform: scale(0);
 
     transform-origin: bottom left;
@@ -213,6 +218,16 @@ textarea:focus {
     }
 }
 
+@media screen and (max-width: 818px) {
+    .test {
+        width: 1.3em;
+        /* height: 1.1em; */
+    }
+    /* .test::before {
+        bottom: -2.5px;
+        left: 3px;
+    } */
+}
 @media screen and (max-width: 760px) {
     .contact__container {
         width: 66%;
@@ -224,7 +239,16 @@ textarea:focus {
     .css-1vzl55l-MuiTypography-root {
         font-size: 1.2rem;
     }
+    .test {
+        width: 1.1em;
+        /* height: 1.1em; */
+    }
+    /* .test::before {
+        bottom: -2.5px;
+        left: 3px;
+    } */
 }
+
 @media screen and (max-width: 600px) {
     .contact__container {
         width: 90%;
@@ -239,6 +263,15 @@ textarea:focus {
     .test::before {
         bottom: -2.5px;
         left: 3px;
+    }
+}
+@media screen and (max-width: 477px) {
+    .test {
+        /* height: 1.1em; */
+    }
+    .test::before {
+        bottom: -2.5px;
+        left: 1px;
     }
 }
 @media screen and (max-width: 415px) {
