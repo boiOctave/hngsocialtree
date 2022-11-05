@@ -112,7 +112,8 @@ const Form = () => {
                                     ? 'error'
                                     : ''
                             }`}>
-                            <span> First Name</span>
+                            <label htmlFor='first_name'> First Name</label>
+
                             <input
                                 placeholder='Enter Your First Name'
                                 type={'text'}
@@ -133,7 +134,7 @@ const Form = () => {
                                     ? 'error'
                                     : ''
                             }`}>
-                            <span> Last Name</span>
+                            <label htmlFor='last_name'> Last Name</label>
                             <input
                                 placeholder='Enter Your Last Name'
                                 type={'text'}
@@ -153,7 +154,7 @@ const Form = () => {
                         className={`email ${
                             errors.email && touched.firstName ? 'error' : ''
                         }`}>
-                        <span> Email</span>
+                        <label htmlFor='email'> Email</label>
                         <input
                             placeholder='Yourname@email.com'
                             type='email'
@@ -170,7 +171,7 @@ const Form = () => {
                         className={`message ${
                             errors.message && touched.firstName ? 'error' : ''
                         }`}>
-                        <span> Message</span>
+                        <label htmlFor='message'> Message</label>
                         <textarea
                             placeholder="Send me a message and i'll reply you as soon as possible..."
                             value={values.message}
