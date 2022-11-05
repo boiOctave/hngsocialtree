@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 textarea {
     resize: none;
@@ -38,15 +38,17 @@ textarea::placeholder {
 .message {
     display: flex;
     flex-direction: column;
-
+    gap: 5px;
     margin-bottom: 15px;
 }
+
 .firstname span,
 .lastname span,
 .email span,
 .message span {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 500;
+    color: #344054;
 }
 .firstname,
 .lastname {
@@ -55,21 +57,24 @@ textarea::placeholder {
 .name input {
     padding: 0.8rem;
 
-    border-radius: 5px;
-    border: 1px rgb(218, 217, 217) solid;
+    border-radius: 8px;
+    border: 1px #d0d5dd solid;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.1);
 }
 .email input {
     padding: 0.8rem;
-    border-radius: 5px;
-    border: 1px rgb(218, 217, 217) solid;
+    border-radius: 8px;
+    border: 1px #d0d5dd solid;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.1);
     margin-bottom: 1rem;
     width: 100%;
 }
 .message textarea {
     padding: 1rem 0.5rem;
     height: 7rem;
-    border-radius: 5px;
-    border: 1px rgb(218, 217, 217) solid;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.2);
+    border: 1px #d0d5dd solid;
     margin-bottom: 1rem;
 }
 
@@ -86,7 +91,7 @@ textarea::placeholder {
 
 .error input,
 .error textarea {
-    border: 1px rgb(156, 33, 33) solid;
+    border: 1px rgb(206 9 9) solid;
 }
 .error input:focus,
 .error textarea:focus {
@@ -113,8 +118,9 @@ textarea:focus {
 .error .css-i4bv87-MuiSvgIcon-root {
     color: red;
 }
+
 .toAST {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
     position: relative;
     bottom: 0rem;
     left: 20%;
@@ -130,14 +136,61 @@ textarea:focus {
     font-weight: 600;
 }
 .contact__container {
-    border: 2px solid rgba(135, 135, 135, 0.197);
     width: 55%;
-    border-radius: 5px;
+
     padding: 2rem;
 }
 .agree {
     display: flex;
     align-items: center;
+    gap: 1rem;
+}
+.agree span {
+    font-size: 14px;
+}
+
+.test {
+    margin: 0px;
+    background-color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    font: inherit;
+    color: currentColor;
+    width: 1.1em;
+    height: 1.1em;
+    border: 1px solid #d0d5dd;
+    border-radius: 0.3em;
+    transform: translateY(-0.075em);
+    display: grid;
+    position: relative;
+    place-content: center;
+}
+.test:checked {
+    border: 1px solid #1570ef;
+}
+.test:focus {
+    border: 1px solid #84caff;
+    box-shadow: 0px 0px 0px 4px #d1e9ff;
+}
+
+.test::before {
+    content: '✔';
+    color: #1570ef;
+    position: absolute;
+    bottom: -4px;
+    left: 1.5px;
+    transform: scale(0);
+
+    transform-origin: bottom left;
+}
+.test:checked::before {
+    transform: scale(0.956);
+}
+.test:focus::before {
+    bottom: -4px;
+    left: 2px;
 }
 
 @media screen and (max-width: 850px) {
@@ -156,13 +209,14 @@ textarea:focus {
         width: 100%;
     }
     .firstname .yupError {
-        bottom: 77px;
+        bottom: 83px;
     }
 }
 
 @media screen and (max-width: 760px) {
     .contact__container {
         width: 66%;
+        padding: 0;
     }
     .css-1iiu75p-MuiTypography-root {
         font-size: 2rem;
@@ -178,10 +232,30 @@ textarea:focus {
     .css-1vzl55l-MuiTypography-root {
         font-size: 1rem;
     }
+    .test {
+        width: 1.1em;
+        /* height: 1.1em; */
+    }
+    .test::before {
+        bottom: -2.5px;
+        left: 3px;
+    }
 }
 @media screen and (max-width: 415px) {
     .css-1vzl55l-MuiTypography-root {
         font-size: 0.9rem;
+    }
+    .test {
+        width: 1.3em;
+        /* height: 1.1em; */
+    }
+    .test::before {
+        bottom: -2.5px;
+        left: 1px;
+    }
+    .test:focus::before {
+        bottom: -4px;
+        left: 1px;
     }
 }
 @media screen and (max-width: 395px) {

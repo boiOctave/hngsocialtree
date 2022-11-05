@@ -16,16 +16,27 @@ const Contact = () => {
             <div className='contact__container'>
                 <Typography
                     variant='h5'
-                    fontWeight={700}
-                    fontFamily={`'Roboto Condensed',sans-serif`}
+                    sx={{
+                        color: '#101828',
+                        fontSize: '35px',
+                        letterSpacing: '-0.05em',
+                    }}
+                    fontWeight={600}
+                    fontFamily={`'Inter', sans-serif`}
                     marginBottom='0.4rem'>
                     Contact Me
                 </Typography>
                 <Typography
+                    fontWeight={400}
                     variant='h6'
-                    fontFamily={`'Roboto Condensed',sans-serif`}
+                    fontFamily={`'Inter', sans-serif`}
                     fontSize='1.1rem'
-                    sx={{ letterSpacing: '0', marginBottom: '2rem' }}>
+                    sx={{
+                        fontSize: '18px',
+
+                        marginBottom: '2rem',
+                        color: '#101828',
+                    }}>
                     Hi there, contact me to ask anything you have in mind.{' '}
                 </Typography>
                 <Box>

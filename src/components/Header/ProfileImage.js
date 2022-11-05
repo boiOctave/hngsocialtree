@@ -53,7 +53,7 @@ const ProfileImage = ({ name }) => {
             </div>
             <Typography
                 sx={{
-                    fontFamily: `'Roboto Condensed', sans-serif`,
+                    fontFamily: `'Inter', sans-serif`,
                     fontWeight: '700',
                 }}>
                 {name}
