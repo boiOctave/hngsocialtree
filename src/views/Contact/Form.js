@@ -191,7 +191,11 @@ const Form = () => {
                                 : ''
                         }`}>
                         <div className='agree'>
-                            <Checkbox onChange={handlePermission} />
+                            <input
+                                type={'checkbox'}
+                                onClick={handlePermission}
+                                className='test'
+                            />
                             <span>
                                 {' '}
                                 You agree to providing your data to Octave who
