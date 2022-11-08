@@ -192,10 +192,12 @@ const Form = () => {
                                 : ''
                         }`}>
                         <div className='agree'>
+                            <label htmlFor='check'></label>
                             <input
                                 type={'checkbox'}
                                 onClick={handlePermission}
                                 className='test'
+                                id='check'
                             />
                             <span>
                                 {' '}
