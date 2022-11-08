@@ -55,6 +55,7 @@ const ProfileImage = ({ name }) => {
                 sx={{
                     fontFamily: `'Inter', sans-serif`,
                     fontWeight: '700',
+                    fontSize: '20px',
                 }}>
                 {name}
             </Typography>
