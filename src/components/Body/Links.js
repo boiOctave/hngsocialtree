@@ -18,11 +18,11 @@ const Links = ({ name, id, link, title }) => {
                 textTransform: 'capitalize',
                 width: '80%',
                 height: '76px',
-
+                padding: '26px 16px',
                 backgroundColor: '#EAECF0',
                 color: '#101828',
                 fontWeight: '700',
-                fontSize: '16x',
+                fontSize: '18x',
                 fontFamily: `'Inter', sans-serif`,
 
                 '&:hover': {
