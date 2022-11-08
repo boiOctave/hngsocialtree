@@ -1,10 +1,4 @@
-import {
-    Alert,
-    Button,
-    Checkbox,
-    CircularProgress,
-    Snackbar,
-} from '@mui/material';
+import { Alert, Button, CircularProgress, Snackbar } from '@mui/material';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
@@ -215,6 +209,7 @@ const Form = () => {
                             disabled={isLoading}
                             sx={{
                                 marginTop: '1rem',
+                                padding: '17px 16px',
                                 textTransform: 'capitalize',
                             }}>
                             Send Message{'    '}
