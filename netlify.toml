@@ -1,3 +1,9 @@
+[[build]]
+command = "mpm run build"
+publish = "/build"
+base = "/"
+
+
 [[redirects]]
 from = "/*"
 to = "/"
