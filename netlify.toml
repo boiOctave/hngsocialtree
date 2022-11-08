@@ -1,4 +1,4 @@
-[[build]]
+[build]
 command = "mpm run build"
 publish = "/build"
 base = "/"
