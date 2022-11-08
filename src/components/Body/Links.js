@@ -17,7 +17,7 @@ const Links = ({ name, id, link, title }) => {
             sx={{
                 textTransform: 'capitalize',
                 width: '80%',
-                height: '43px',
+                height: '76px',
 
                 backgroundColor: '#EAECF0',
                 color: '#101828',
