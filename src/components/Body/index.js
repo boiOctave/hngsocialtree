@@ -8,13 +8,11 @@ const index = () => {
     return (
         <Box
             sx={{
-                marginTop: '6rem',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '1.7rem',
                 justifyContent: 'center',
                 alignItems: 'center',
-                height: '50%',
             }}>
             <Links
                 name={'Twitter Link'}
